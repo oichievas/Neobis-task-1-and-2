@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks Neobis</title>
+    <style>
+        .wrap {
+            display: flex;
+            align-self: start;
+        }
+        .question {
+            border-right: 3px solid black;
+            margin-right: 10px;
+            padding: 10px;
+        } 
+    </style>
+</head>
+<body>
+    
+    <h1>See console</h1>
+    <div class="wrap">
+        <div class="question">
+            <h2>Задача #1</h2>
+        <p>
+            <pre>
+                Задача #1
+    for (var i = 0; i < 10; i++) {
+        setTimeout(function() {
+            console.log(i);
+        }
+    };
+    Что выведет консоль и почему?
+            </pre>
+        </p>
+        </div>
+        <div class="answer">
+            <b>Выведет синтаксическую ошибку. Так как в функции с setTimeout нужно задать время. Функция должна выглядеть так:</b>
+            <b>
+                <pre>
+                    for (var i = 0; i < 10; i++) {
+                        setTimeout(function() {
+                            console.log(i);
+                        }, 2000)
+                    };
+                </pre>
+            </b>
+        </div>
+    </div>
+    
+    <div class="wrap">
+        <div class="question">
+            <h2>Задача #2</h2>
+            <pre>
+    Write a JavaScript program to display the current day and time in the following format.  
+    Sample Output : 
+    Today is : Friday. 
+    Current time is : 4 PM : 50 : 22
+            </pre>
+        </div>
+        <div class="answer">
+            <h3><p class="data"></p></h3>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="question">
+    Напишите функцию JavaScript, которая переворачивает число.
+    Пример x = 32243;
+    Ожидаемый результат: 34223
+        </div>
+        <div class="answer">
+            <p>Reverse a number</p>
+            <p class="reverseNum"></p>
+        </div>
+    </div>
+
+
+    <div class="wrap">
+        <div class="question">
+            <p>
+    Напишите программу на JavaScript для вычисления факториала числа. В математике факториал неотрицательного целого числа n, обозначаемого n !, является произведением всех положительных целых чисел, меньших или равных n.
+    Например, 5! = 5 х 4 х 3 х 2 х 1 = 120
+            </p>
+        </div>
+        <div class="answer">
+            <p>Факториал: </p>
+            <h3 id="factorial"></h3>
+        </div>
+    </div>
+
+
+    
+
+        <div class="wrap">
+            <div class="question">
+                <p>
+                    Напишите программу на JavaScript, которая принимает два целых числа и отображает большее.
+                </p>
+            </div>
+            <div class="answer">
+                <p class="biggerNum"></p>
+            </div>
+        </div>
+
+        <div class="wrap">
+            <div class="question">
+                <p>
+                    Напишите простую программу на JavaScript, чтобы объединить все элементы следующего массива в строку.
+                    Пример массива: myColor = [«Красный», «Зеленый», «Белый», «Черный»];
+                    Ожидаемый результат:
+                    «Красный, зеленый, белый, черный»
+                    «Красный + зеленый + белый + черный»
+                </p>
+            </div>
+            <div class="answer">
+                <p class="colorsFirst"></p>
+                <p class="colorsSecond"></p>
+            </div>
+        </div>
+
+
+        <div class="wrap">
+            <div class="question">
+                <p>
+                    Напишите функцию JavaScript, чтобы получить название месяца с определенной даты.
+                    Данные испытаний:
+                    console.log (имя_месяца (новая дата ("11.10.2009")));
+                    console.log (имя_месяца (новая дата ("13.11.2014")));
+                    Выход :
+                    "Октябрь"
+                    "Ноябрь"
+                </p>
+            </div>
+            <div class="answer">
+             <p>Чуть сложно разобраться, может быть вечером пойму. Функции с датами пугают чуть </p>
+             <a href="https://www.w3resource.com/javascript-exercises/javascript-date-exercise-4.php">Постараюсь понять</a>
+            </div>
+        </div>
+
+        <div class="wrap">
+            <div class="question">
+                <p>
+                    Напишите программу на JavaScript, чтобы проверить, является ли первый символ строки прописным или нет.
+                </p>
+            </div>
+            <div class="answer">
+                <h3 class="checkUpperCase"></h3>
+            </div>
+        </div>
+
+
+        <div class="wrap">
+            <div class="question">
+                <p>
+                   Draw smile
+                </p>
+            </div>
+            <div class="answer">
+                <pre class="smile"></pre>
+            </div>
+        </div>
+
+
+        <div class="wrap">
+            <div class="question">
+                <p>
+                   
+                </p>
+            </div>
+            <div class="answer">
+         
+            </div>
+        </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
